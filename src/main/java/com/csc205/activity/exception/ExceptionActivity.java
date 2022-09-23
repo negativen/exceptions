@@ -15,6 +15,7 @@ public class ExceptionActivity {
             System.out.println("Out of the block");
             e.printStackTrace();
         }
+        //next section
 
         // try-catch-catch - order of catch blocks matters per hierarchy
         try {
@@ -24,6 +25,7 @@ public class ExceptionActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        //next section
 
         try {
             // do something
@@ -33,6 +35,7 @@ public class ExceptionActivity {
         finally {
             // always do something
         }
+        //next section
 
         try {
             // do something we don't expect to throw exceptions
@@ -40,6 +43,7 @@ public class ExceptionActivity {
         finally {
             // but if we do, always execute code here
         }
+        //next section
 
         // try-with-resources
         try(Scanner scanner1 = new Scanner(System.in)){
@@ -54,7 +58,6 @@ public class ExceptionActivity {
                 scanner2.close();
             }
         }
-
         try (Scanner scanner3 = new Scanner(System.in)) {
             // do something with scanner3
         } catch (Exception e) {
